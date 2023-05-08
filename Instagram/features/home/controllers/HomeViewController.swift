@@ -29,9 +29,10 @@ class HomeViewController: UIViewController {
     }
     
     private func navigateToLoginViewController() {
-        let loginViewController = LoginViewController()
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Login", bundle: nil)
+        let loginViewController = storyBoard.instantiateViewController(withIdentifier: "loginStoryboard") as! LoginViewController
         loginViewController.modalPresentationStyle = .fullScreen
-        present(loginViewController,animated: false)
+        self.present(loginViewController, animated: true, completion: nil)
     }
 
 }
