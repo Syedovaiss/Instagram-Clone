@@ -55,7 +55,6 @@ class LoginViewController: UIViewController {
                 }
             }
         }
-        
     }
     
     private func showUsernameError() {
