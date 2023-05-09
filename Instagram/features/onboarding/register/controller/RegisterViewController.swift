@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SafariServices
 
 class RegisterViewController: UIViewController {
     
@@ -60,7 +61,9 @@ class RegisterViewController: UIViewController {
     
     @objc func termsAndConditionsClicked(tapGestureRecognizer: UITapGestureRecognizer)
     {
-        // TODO: add WebView here
+        guard let url = URL(string: "https://help.instagram.com/581066165581870") else {return }
+        let webController = SFSafariViewController(url: url)
+        present(webController,animated:true)
         
     }
     
