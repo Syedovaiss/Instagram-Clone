@@ -15,6 +15,8 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var loginButton: UIButton!
     
+    private let authManager = AuthManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -47,7 +49,11 @@ class LoginViewController: UIViewController {
         } else if passwordTextField.text?.isEmpty == true {
             showPasswordError()
         } else {
-            loginButton.backgroundColor = .green
+            authManager.loginUser(username: identityTextField.getTextOrDefault(), password: passwordTextField.getTextOrDefault()) { isLoggedIn in
+                if isLoggedIn {
+                    self.dismiss(animated: true)
+                }
+            }
         }
         
     }

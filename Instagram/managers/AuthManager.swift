@@ -2,14 +2,14 @@
 //  AuthManager.swift
 //  Instagram
 //
-//  Created by apple on 08/05/2023.
+//  Created by ovais on 08/05/2023.
 //
 
 import Foundation
 
 protocol AuthManagerProtocol {
-    func registerUser(username:String,email:String,password:String)
-    func loginUser(username:String?,email:String?,password:String)
+    func registerUser(username:String,email:String,password:String,completion: @escaping(Bool) ->Void)
+    func loginUser(username:String?,password:String,completion: @escaping(Bool) ->Void)
     func isLoggedIn() -> Bool
 }
 
@@ -19,12 +19,26 @@ class AuthManager : AuthManagerProtocol {
     
     private let databaseManager = DatabaseManager.shared
     
-    func registerUser(username:String,email:String,password:String) {
-        databaseManager.register(username: username, email: email, password: password)
+    func registerUser(username:String,email:String,password:String,completion: @escaping (Bool) ->Void) {
+        databaseManager.canCreateAccount(username: username, completion: { canCreate in
+            if canCreate {
+                self.databaseManager.register(username: username, email: email, password: password) { isRegistered in
+                    if isRegistered {
+                        completion(true)
+                    } else {
+                        completion(false)
+                    }
+                }
+            } else {
+                completion(false)
+            }
+        })
     }
     
-    func loginUser(username:String?,email:String?,password:String) {
-        databaseManager.login(username: username, email: email, password: password)
+    func loginUser(username:String?,password:String,completion: @escaping(Bool) ->Void) {
+        if let username = username {
+            databaseManager.login(username: username, password: password, completion: completion)
+        }
         
     }
     

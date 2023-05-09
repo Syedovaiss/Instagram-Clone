@@ -17,7 +17,7 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var onTermsAndConditions: UITextView!
     @IBOutlet weak var signingButton: UIButton!
     @IBOutlet weak var backArrow: UIImageView!
-    
+    private let authManager = AuthManager()
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -52,7 +52,13 @@ class RegisterViewController: UIViewController {
     }
     
     @IBAction func onSigningUp(_ sender: UIButton) {
-        
+        DispatchQueue.main.async { [self] in
+            authManager.registerUser(username: usernameTextField.getTextOrDefault(), email: emailTextField.getTextOrDefault(), password: passwordTextField.getTextOrDefault()) { isRegistered in
+                if isRegistered {
+                    self.dismiss(animated: true)
+                }
+            }
+        }
     }
     
     @objc func textFieldDidChange(textField: UITextField) {
