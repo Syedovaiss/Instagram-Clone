@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="loginStoryboard" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="LoginViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_instagram_full" translatesAutoresizingMaskIntoConstraints="NO" id="opE-24-XeB">
+                                <rect key="frame" x="76" y="167" width="241" height="128"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username or Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LBX-9m-YWu">
+                                <rect key="frame" x="16" y="311" width="361" height="40"/>
+                                <color key="backgroundColor" name="Field Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="R09-05-6DG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XQ7-2v-k0R">
+                                <rect key="frame" x="16" y="367" width="361" height="40"/>
+                                <color key="backgroundColor" name="Field Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="FcR-rU-vWX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Nv-IJ-a41">
+                                <rect key="frame" x="16" y="431" width="361" height="40"/>
+                                <color key="backgroundColor" name="Primary Button"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="KnI-3y-aZO"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Login">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="onLogin:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="NOe-z8-0xZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kc9-iW-eLA">
+                                <rect key="frame" x="16" y="487" width="361" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Don't have an account? Sign Up."/>
+                                <connections>
+                                    <action selector="onSignUp:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="igI-El-5Ab"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="opE-24-XeB" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="0lG-Dz-E1a"/>
+                            <constraint firstItem="LBX-9m-YWu" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="4AS-j5-Uxh"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="LBX-9m-YWu" secondAttribute="trailing" constant="16" id="5zR-gH-HIo"/>
+                            <constraint firstItem="opE-24-XeB" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="76" id="635-3v-YA1"/>
+                            <constraint firstItem="XQ7-2v-k0R" firstAttribute="top" secondItem="LBX-9m-YWu" secondAttribute="bottom" constant="16" id="JIK-uw-F65"/>
+                            <constraint firstItem="Kc9-iW-eLA" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="N0W-L1-hpK"/>
+                            <constraint firstItem="2Nv-IJ-a41" firstAttribute="top" secondItem="XQ7-2v-k0R" secondAttribute="bottom" constant="24" id="PZz-88-cM5"/>
+                            <constraint firstItem="LBX-9m-YWu" firstAttribute="top" secondItem="opE-24-XeB" secondAttribute="bottom" constant="16" id="Tfz-Gc-vMt"/>
+                            <constraint firstItem="XQ7-2v-k0R" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="X64-Ju-4RJ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Kc9-iW-eLA" secondAttribute="trailing" constant="16" id="dbH-u9-4tZ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="2Nv-IJ-a41" secondAttribute="trailing" constant="16" id="em9-Zd-LuI"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="XQ7-2v-k0R" secondAttribute="trailing" constant="16" id="ggZ-Cz-K3V"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="opE-24-XeB" secondAttribute="bottom" constant="523" id="hzX-oS-aly"/>
+                            <constraint firstItem="2Nv-IJ-a41" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="o89-F9-W7f"/>
+                            <constraint firstItem="opE-24-XeB" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="108" id="w98-L9-RXZ"/>
+                            <constraint firstItem="Kc9-iW-eLA" firstAttribute="top" secondItem="2Nv-IJ-a41" secondAttribute="bottom" constant="16" id="xW6-Je-aca"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="identityTextField" destination="LBX-9m-YWu" id="QfQ-bg-blM"/>
+                        <outlet property="loginButton" destination="2Nv-IJ-a41" id="cOF-ni-13g"/>
+                        <outlet property="passwordTextField" destination="XQ7-2v-k0R" id="9xi-IP-eSd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="101.5267175572519" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_instagram_full" width="60.666667938232422" height="16.333333969116211"/>
+        <namedColor name="Field Color">
+            <color red="0.94900000095367432" green="0.94900000095367432" blue="0.96899998188018799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Primary Button">
+            <color red="0.21568627450980393" green="0.59215686274509804" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
