@@ -29,9 +29,6 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="onUsernameChanged:" destination="Y6W-OH-hqX" eventType="editingChanged" id="hhU-js-9yd"/>
-                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XQ7-2v-k0R">
                                 <rect key="frame" x="16" y="367" width="361" height="40"/>
@@ -41,9 +38,6 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="onPasswordChanged:" destination="Y6W-OH-hqX" eventType="editingChanged" id="4Fd-8g-pyY"/>
-                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Nv-IJ-a41">
                                 <rect key="frame" x="16" y="431" width="361" height="40"/>
