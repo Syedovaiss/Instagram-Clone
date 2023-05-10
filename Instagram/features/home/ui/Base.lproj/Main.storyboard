@@ -16,7 +16,7 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iIp-ze-bde">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
@@ -116,17 +116,36 @@
         <scene sceneID="gni-PG-Ezg">
             <objects>
                 <viewController id="XHs-u0-sPE" customClass="ProfileViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="AmG-vV-dFr">
+                    <view key="view" contentMode="scaleToFill" id="dfv-he-lag">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="Zh0-yW-gYu"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FcL-Z0-nPd" userLabel="Header View">
+                                <rect key="frame" x="0.0" y="103" width="393" height="61"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yyg-kh-NQ8" userLabel="User Info View">
+                                <rect key="frame" x="0.0" y="190" width="393" height="180"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="uAx-NN-Fj9"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FcL-Z0-nPd" firstAttribute="leading" secondItem="uAx-NN-Fj9" secondAttribute="leading" id="7C9-TZ-Wbo"/>
+                            <constraint firstItem="Yyg-kh-NQ8" firstAttribute="top" secondItem="FcL-Z0-nPd" secondAttribute="bottom" constant="26" id="N6S-KI-aD8"/>
+                            <constraint firstItem="FcL-Z0-nPd" firstAttribute="top" secondItem="uAx-NN-Fj9" secondAttribute="top" id="Vfg-6c-hyW"/>
+                            <constraint firstItem="Yyg-kh-NQ8" firstAttribute="leading" secondItem="uAx-NN-Fj9" secondAttribute="leading" id="bfj-Rl-fb6"/>
+                            <constraint firstItem="uAx-NN-Fj9" firstAttribute="trailing" secondItem="FcL-Z0-nPd" secondAttribute="trailing" id="pDU-fc-Wdz"/>
+                            <constraint firstItem="uAx-NN-Fj9" firstAttribute="trailing" secondItem="Yyg-kh-NQ8" secondAttribute="trailing" id="qeh-6d-Lfc"/>
+                            <constraint firstItem="Yyg-kh-NQ8" firstAttribute="top" secondItem="FcL-Z0-nPd" secondAttribute="bottom" constant="8" id="yhf-zo-Q8T"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="LSp-Ty-fbl"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GWT-JL-T0m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1181" y="912"/>
+            <point key="canvasLocation" x="1180.9160305343512" y="911.97183098591552"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="SHt-7P-4NZ">
@@ -198,11 +217,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="icon_add_post" width="24" height="24"/>
-        <image name="icon_home" width="24" height="24"/>
-        <image name="icon_profile" width="24" height="24"/>
-        <image name="icon_reels" width="24" height="24"/>
-        <image name="icon_search" width="24" height="24"/>
+        <image name="icon_add_post" width="75" height="50"/>
+        <image name="icon_home" width="75" height="50"/>
+        <image name="icon_profile" width="75" height="50"/>
+        <image name="icon_reels" width="24" height="25.333333969116211"/>
+        <image name="icon_search" width="75" height="50"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

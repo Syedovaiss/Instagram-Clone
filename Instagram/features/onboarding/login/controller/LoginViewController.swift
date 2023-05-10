@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import JGProgressHUD
 
 class LoginViewController: UIViewController {
     
@@ -15,6 +16,7 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var loginButton: UIButton!
     
+    private var hud = JGProgressHUD()
     private let authManager = AuthManager()
     
     override func viewDidLoad() {
@@ -49,7 +51,10 @@ class LoginViewController: UIViewController {
         } else if passwordTextField.text?.isEmpty == true {
             showPasswordError()
         } else {
+            showProgressBar()
             authManager.loginUser(username: identityTextField.getTextOrDefault(), password: passwordTextField.getTextOrDefault()) { isLoggedIn in
+                self.hideProgressBar()
+                LocalStorageManager().setUsername(username: self.identityTextField.getTextOrDefault())
                 if isLoggedIn {
                     self.dismiss(animated: true)
                 }
@@ -74,5 +79,13 @@ class LoginViewController: UIViewController {
         passwordTextField.layer.cornerRadius = 5.0
         passwordTextField.layer.borderColor = errorFieldBorderColor.cgColor
         passwordTextField.textColor = UIColor(red: 255/255, green: 0/255, blue: 0/255, alpha: 1.0)
+    }
+    
+    private func showProgressBar() {
+        hud.show(in: self.view)
+    }
+    
+    private func hideProgressBar() {
+        hud.dismiss()
     }
 }

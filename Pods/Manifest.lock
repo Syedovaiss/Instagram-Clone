@@ -127,6 +127,8 @@ PODS:
     - GoogleUtilities/Logger
   - GTMSessionFetcher/Core (3.1.0)
   - leveldb-library (1.22.1)
+  - LZViewPager (1.2.8):
+    - SnapKit (~> 5.6.0)
   - nanopb (2.30909.0):
     - nanopb/decode (= 2.30909.0)
     - nanopb/encode (= 2.30909.0)
@@ -135,6 +137,7 @@ PODS:
   - PromisesObjC (2.2.0)
   - PromisesSwift (2.2.0):
     - PromisesObjC (= 2.2.0)
+  - SnapKit (5.6.0)
 
 DEPENDENCIES:
   - Appirater
@@ -144,6 +147,7 @@ DEPENDENCIES:
   - Firebase/Crashlytics
   - Firebase/Database
   - Firebase/Storage
+  - LZViewPager
 
 SPEC REPOS:
   trunk:
@@ -166,9 +170,11 @@ SPEC REPOS:
     - GoogleUtilities
     - GTMSessionFetcher
     - leveldb-library
+    - LZViewPager
     - nanopb
     - PromisesObjC
     - PromisesSwift
+    - SnapKit
 
 SPEC CHECKSUMS:
   Appirater: 44a4651f7912a17dc906b655f0c215d5bb768b84
@@ -190,10 +196,12 @@ SPEC CHECKSUMS:
   GoogleUtilities: c2bdc4cf2ce786c4d2e6b3bcfd599a25ca78f06f
   GTMSessionFetcher: c9e714f7eec91a55641e2bab9f45fd83a219b882
   leveldb-library: 50c7b45cbd7bf543c81a468fe557a16ae3db8729
+  LZViewPager: 832bd177210060e1282b67aa1e9cd201ded67a5b
   nanopb: b552cce312b6c8484180ef47159bc0f65a1f0431
   PromisesObjC: 09985d6d70fbe7878040aa746d78236e6946d2ef
   PromisesSwift: cf9eb58666a43bbe007302226e510b16c1e10959
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
 
-PODFILE CHECKSUM: 587aab57d9a8a1c234dacdb30f5c10f49d0e35f1
+PODFILE CHECKSUM: ef20c63e533f856467d3e47795f4fb84abc84364
 
 COCOAPODS: 1.12.1

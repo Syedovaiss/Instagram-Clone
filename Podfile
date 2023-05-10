@@ -15,5 +15,6 @@ target 'Instagram' do
   pod 'Firebase/Analytics'
   pod 'Firebase/Crashlytics'
   pod 'Firebase/Storage'
+  pod 'LZViewPager'
 
 end
