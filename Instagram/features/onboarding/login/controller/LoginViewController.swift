@@ -16,6 +16,8 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var loginButton: UIButton!
     
+    private let storageManager = LocalStorageManager.shared
+    
     private var hud = JGProgressHUD()
     private let authManager = AuthManager()
     
@@ -54,7 +56,7 @@ class LoginViewController: UIViewController {
             showProgressBar()
             authManager.loginUser(username: identityTextField.getTextOrDefault(), password: passwordTextField.getTextOrDefault()) { isLoggedIn in
                 self.hideProgressBar()
-                LocalStorageManager().setUsername(username: self.identityTextField.getTextOrDefault())
+                self.storageManager.setUsername(username: self.identityTextField.getTextOrDefault())
                 if isLoggedIn {
                     self.dismiss(animated: true)
                 }

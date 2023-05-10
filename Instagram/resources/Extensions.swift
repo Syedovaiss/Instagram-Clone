@@ -22,3 +22,10 @@ extension String? {
         return self ?? ""
     }
 }
+
+
+extension Int {
+    func toString() -> String {
+        return "\(self)"
+    }
+}

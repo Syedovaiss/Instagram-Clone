@@ -20,6 +20,7 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var backArrow: UIImageView!
     private let authManager = AuthManager()
     private var hud = JGProgressHUD()
+    private let storage = LocalStorageManager.shared
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,6 +61,7 @@ class RegisterViewController: UIViewController {
             authManager.registerUser(username: usernameTextField.getTextOrDefault(), email: emailTextField.getTextOrDefault(), password: passwordTextField.getTextOrDefault()) {
                 isRegistered in
                 self.hideProgressBar()
+                self.storage.setFullname(name: self.fullnameTextField.getTextOrDefault())
                 if isRegistered {
                     self.dismiss(animated: true)
                 }
