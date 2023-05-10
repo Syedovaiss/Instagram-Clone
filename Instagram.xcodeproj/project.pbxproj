@@ -48,6 +48,8 @@
 		18C732AD2A0BEEC200974CD8 /* UserCounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C732AC2A0BEEC200974CD8 /* UserCounts.swift */; };
 		18C732AF2A0BF25200974CD8 /* ProfileDataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C732AE2A0BF25200974CD8 /* ProfileDataMapper.swift */; };
 		18C732B12A0BF28200974CD8 /* UserCountResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C732B02A0BF28200974CD8 /* UserCountResponse.swift */; };
+		18C732B32A0C027400974CD8 /* AllPostResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C732B22A0C027400974CD8 /* AllPostResponse.swift */; };
+		18C732B52A0C19E200974CD8 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C732B42A0C19E200974CD8 /* ImageCollectionViewCell.swift */; };
 		6735496894BB249021A20767 /* Pods_Instagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6638AD879A572E62015F494 /* Pods_Instagram.framework */; };
 /* End PBXBuildFile section */
 
@@ -94,6 +96,8 @@
 		18C732AC2A0BEEC200974CD8 /* UserCounts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCounts.swift; sourceTree = "<group>"; };
 		18C732AE2A0BF25200974CD8 /* ProfileDataMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataMapper.swift; sourceTree = "<group>"; };
 		18C732B02A0BF28200974CD8 /* UserCountResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCountResponse.swift; sourceTree = "<group>"; };
+		18C732B22A0C027400974CD8 /* AllPostResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPostResponse.swift; sourceTree = "<group>"; };
+		18C732B42A0C19E200974CD8 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		612861B3875ACD0585F0B886 /* Pods-Instagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.release.xcconfig"; path = "Target Support Files/Pods-Instagram/Pods-Instagram.release.xcconfig"; sourceTree = "<group>"; };
 		D6638AD879A572E62015F494 /* Pods_Instagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA7E41DA231743545A80394F /* Pods-Instagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.debug.xcconfig"; path = "Target Support Files/Pods-Instagram/Pods-Instagram.debug.xcconfig"; sourceTree = "<group>"; };
@@ -264,6 +268,7 @@
 			isa = PBXGroup;
 			children = (
 				18C732AE2A0BF25200974CD8 /* ProfileDataMapper.swift */,
+				18C732B42A0C19E200974CD8 /* ImageCollectionViewCell.swift */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -477,6 +482,7 @@
 				18C732A32A0BD6A100974CD8 /* AccountType.swift */,
 				18C732AC2A0BEEC200974CD8 /* UserCounts.swift */,
 				18C732B02A0BF28200974CD8 /* UserCountResponse.swift */,
+				18C732B22A0C027400974CD8 /* AllPostResponse.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -637,6 +643,7 @@
 			files = (
 				183F32C32A093A0900D2FA51 /* PostViewController.swift in Sources */,
 				183F32CF2A0940D200D2FA51 /* ReelsPlayerViewController.swift in Sources */,
+				18C732B52A0C19E200974CD8 /* ImageCollectionViewCell.swift in Sources */,
 				18C732A12A0BCF4000974CD8 /* TaggedPostViewController.swift in Sources */,
 				183F329C2A09331000D2FA51 /* HomeViewController.swift in Sources */,
 				183F32D62A09412000D2FA51 /* SettingsViewController.swift in Sources */,
@@ -644,6 +651,7 @@
 				183F32C12A093A0000D2FA51 /* ProfileViewController.swift in Sources */,
 				183F32E22A0941E000D2FA51 /* StoriesViewController.swift in Sources */,
 				183F32C52A093A1300D2FA51 /* ReelsViewController.swift in Sources */,
+				18C732B32A0C027400974CD8 /* AllPostResponse.swift in Sources */,
 				18C7328F2A09534A00974CD8 /* DatabaseManager.swift in Sources */,
 				183F32BF2A0939E800D2FA51 /* SearchViewController.swift in Sources */,
 				183F32E52A0941F900D2FA51 /* MessageListingViewController.swift in Sources */,
