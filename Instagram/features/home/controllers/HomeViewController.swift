@@ -14,7 +14,7 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        view.backgroundColor = .systemBackground
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -35,5 +35,11 @@ class HomeViewController: UIViewController {
         self.present(loginViewController, animated: true, completion: nil)
     }
 
+    @IBAction func onMessageClicked(_ sender: Any) {
+        let storyBoard = UIStoryboard(name: "MessageListing", bundle: nil)
+        let viewController = storyBoard.instantiateViewController(withIdentifier: "messageListingStoryboard") as! MessageListingViewController
+        viewController.modalPresentationStyle = .fullScreen
+        self.present(viewController, animated: true)
+    }
 }
 

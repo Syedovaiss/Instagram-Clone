@@ -8,10 +8,12 @@
 import UIKit
 
 class ChatViewController: UIViewController {
-
+    
+    var messageDetails:MessagingModel?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print("Message Received = \(messageDetails)")
         // Do any additional setup after loading the view.
     }
     

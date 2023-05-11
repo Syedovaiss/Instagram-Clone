@@ -6,11 +6,13 @@
 //
 
 import Foundation
+import Firebase
 
 protocol AuthManagerProtocol {
     func registerUser(username:String,email:String,password:String,completion: @escaping(Bool) ->Void)
     func loginUser(username:String?,password:String,completion: @escaping(Bool) ->Void)
     func isLoggedIn() -> Bool
+    func logout()
 }
 
 class AuthManager : AuthManagerProtocol {
@@ -44,5 +46,17 @@ class AuthManager : AuthManagerProtocol {
     
     func isLoggedIn() -> Bool {
         return databaseManager.isLoggedIn()
+    }
+    
+    func logout() {
+        removeDataFromFirebaseAuth()
+    }
+    
+    private func removeDataFromFirebaseAuth() {
+        do {
+            try Auth.auth().signOut()
+        } catch {
+
+        }
     }
 }

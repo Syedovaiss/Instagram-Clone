@@ -2,20 +2,26 @@
 //  SettingsViewController.swift
 //  Instagram
 //
-//  Created by apple on 08/05/2023.
+//  Created by ovais on 08/05/2023.
 //
 
 import UIKit
 
 class SettingsViewController: UIViewController {
 
+    private let storage = LocalStorageManager.shared
+    private let authManager = AuthManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func onLogout(_ sender: UIButton) {
+        authManager.logout()
+        storage.clear()
+        self.navigationController?.popToRootViewController(animated: true)
+    }
+    
     /*
     // MARK: - Navigation
 

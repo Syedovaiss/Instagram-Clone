@@ -7,6 +7,7 @@
 
 import UIKit
 import SafariServices
+import JGProgressHUD
 
 class RegisterViewController: UIViewController {
     
@@ -18,6 +19,9 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var signingButton: UIButton!
     @IBOutlet weak var backArrow: UIImageView!
     private let authManager = AuthManager()
+    private var hud = JGProgressHUD()
+    private let storage = LocalStorageManager.shared
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -53,12 +57,24 @@ class RegisterViewController: UIViewController {
     
     @IBAction func onSigningUp(_ sender: UIButton) {
         DispatchQueue.main.async { [self] in
-            authManager.registerUser(username: usernameTextField.getTextOrDefault(), email: emailTextField.getTextOrDefault(), password: passwordTextField.getTextOrDefault()) { isRegistered in
+            showProgressBar()
+            authManager.registerUser(username: usernameTextField.getTextOrDefault(), email: emailTextField.getTextOrDefault(), password: passwordTextField.getTextOrDefault()) {
+                isRegistered in
+                self.hideProgressBar()
+                self.storage.setFullname(name: self.fullnameTextField.getTextOrDefault())
                 if isRegistered {
                     self.dismiss(animated: true)
                 }
             }
         }
+    }
+    
+    private func showProgressBar() {
+        hud.show(in: self.view)
+    }
+    
+    private func hideProgressBar() {
+        hud.dismiss()
     }
     
     @objc func textFieldDidChange(textField: UITextField) {
