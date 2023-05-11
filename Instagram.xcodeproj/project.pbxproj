@@ -50,6 +50,15 @@
 		18C732B12A0BF28200974CD8 /* UserCountResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C732B02A0BF28200974CD8 /* UserCountResponse.swift */; };
 		18C732B32A0C027400974CD8 /* AllPostResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C732B22A0C027400974CD8 /* AllPostResponse.swift */; };
 		18C732B52A0C19E200974CD8 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C732B42A0C19E200974CD8 /* ImageCollectionViewCell.swift */; };
+		18C732B82A0CD3AE00974CD8 /* MessageListing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C732B72A0CD3AE00974CD8 /* MessageListing.storyboard */; };
+		18C732BC2A0CD53900974CD8 /* MessageListingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C732BB2A0CD53900974CD8 /* MessageListingTableViewCell.swift */; };
+		18C732BF2A0CD7C800974CD8 /* MessagingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C732BE2A0CD7C800974CD8 /* MessagingViewModel.swift */; };
+		18C732C22A0CD7EC00974CD8 /* MessagingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C732C12A0CD7EC00974CD8 /* MessagingModel.swift */; };
+		18C732C52A0CD83D00974CD8 /* GetMessagesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C732C42A0CD83D00974CD8 /* GetMessagesUseCase.swift */; };
+		18C732C92A0CDA3E00974CD8 /* JsonPlaceholderNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C732C82A0CDA3E00974CD8 /* JsonPlaceholderNetworkManager.swift */; };
+		18C732CB2A0CDB6B00974CD8 /* MessagingResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C732CA2A0CDB6B00974CD8 /* MessagingResponse.swift */; };
+		18C732CD2A0CE7F200974CD8 /* MessageDataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C732CC2A0CE7F200974CD8 /* MessageDataMapper.swift */; };
+		18C732D02A0CEA8200974CD8 /* DIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C732CF2A0CEA8200974CD8 /* DIManager.swift */; };
 		6735496894BB249021A20767 /* Pods_Instagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6638AD879A572E62015F494 /* Pods_Instagram.framework */; };
 /* End PBXBuildFile section */
 
@@ -98,6 +107,15 @@
 		18C732B02A0BF28200974CD8 /* UserCountResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCountResponse.swift; sourceTree = "<group>"; };
 		18C732B22A0C027400974CD8 /* AllPostResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPostResponse.swift; sourceTree = "<group>"; };
 		18C732B42A0C19E200974CD8 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		18C732B72A0CD3AE00974CD8 /* MessageListing.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MessageListing.storyboard; sourceTree = "<group>"; };
+		18C732BB2A0CD53900974CD8 /* MessageListingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListingTableViewCell.swift; sourceTree = "<group>"; };
+		18C732BE2A0CD7C800974CD8 /* MessagingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagingViewModel.swift; sourceTree = "<group>"; };
+		18C732C12A0CD7EC00974CD8 /* MessagingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagingModel.swift; sourceTree = "<group>"; };
+		18C732C42A0CD83D00974CD8 /* GetMessagesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMessagesUseCase.swift; sourceTree = "<group>"; };
+		18C732C82A0CDA3E00974CD8 /* JsonPlaceholderNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonPlaceholderNetworkManager.swift; sourceTree = "<group>"; };
+		18C732CA2A0CDB6B00974CD8 /* MessagingResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagingResponse.swift; sourceTree = "<group>"; };
+		18C732CC2A0CE7F200974CD8 /* MessageDataMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDataMapper.swift; sourceTree = "<group>"; };
+		18C732CF2A0CEA8200974CD8 /* DIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIManager.swift; sourceTree = "<group>"; };
 		612861B3875ACD0585F0B886 /* Pods-Instagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.release.xcconfig"; path = "Target Support Files/Pods-Instagram/Pods-Instagram.release.xcconfig"; sourceTree = "<group>"; };
 		D6638AD879A572E62015F494 /* Pods_Instagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA7E41DA231743545A80394F /* Pods-Instagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.debug.xcconfig"; path = "Target Support Files/Pods-Instagram/Pods-Instagram.debug.xcconfig"; sourceTree = "<group>"; };
@@ -137,6 +155,7 @@
 		183F32962A09331000D2FA51 /* Instagram */ = {
 			isa = PBXGroup;
 			children = (
+				18C732CE2A0CEA7500974CD8 /* di */,
 				18C732A72A0BE19B00974CD8 /* network */,
 				18C7328D2A09533800974CD8 /* managers */,
 				183F32A52A09331200D2FA51 /* Info.plist */,
@@ -345,6 +364,10 @@
 		183F32D72A09414E00D2FA51 /* messaging */ = {
 			isa = PBXGroup;
 			children = (
+				18C732C32A0CD83000974CD8 /* usecase */,
+				18C732C02A0CD7E000974CD8 /* model */,
+				18C732BD2A0CD7B200974CD8 /* viewmodel */,
+				18C732B62A0CD39A00974CD8 /* ui */,
 				183F32E32A0941E500D2FA51 /* controllers */,
 			);
 			path = messaging;
@@ -469,6 +492,7 @@
 		18C7328D2A09533800974CD8 /* managers */ = {
 			isa = PBXGroup;
 			children = (
+				18C732AA2A0BEE0B00974CD8 /* ProfileDataManager.swift */,
 				18C7328E2A09534A00974CD8 /* DatabaseManager.swift */,
 				18C732902A09548100974CD8 /* AuthManager.swift */,
 				18C732992A0A8A7D00974CD8 /* LocalStorageManager.swift */,
@@ -491,9 +515,52 @@
 			isa = PBXGroup;
 			children = (
 				18C732A82A0BE1AE00974CD8 /* NetworkManager.swift */,
-				18C732AA2A0BEE0B00974CD8 /* ProfileDataManager.swift */,
+				18C732C82A0CDA3E00974CD8 /* JsonPlaceholderNetworkManager.swift */,
 			);
 			path = network;
+			sourceTree = "<group>";
+		};
+		18C732B62A0CD39A00974CD8 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				18C732B72A0CD3AE00974CD8 /* MessageListing.storyboard */,
+				18C732BB2A0CD53900974CD8 /* MessageListingTableViewCell.swift */,
+				18C732CC2A0CE7F200974CD8 /* MessageDataMapper.swift */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		18C732BD2A0CD7B200974CD8 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				18C732BE2A0CD7C800974CD8 /* MessagingViewModel.swift */,
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
+		18C732C02A0CD7E000974CD8 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				18C732C12A0CD7EC00974CD8 /* MessagingModel.swift */,
+				18C732CA2A0CDB6B00974CD8 /* MessagingResponse.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		18C732C32A0CD83000974CD8 /* usecase */ = {
+			isa = PBXGroup;
+			children = (
+				18C732C42A0CD83D00974CD8 /* GetMessagesUseCase.swift */,
+			);
+			path = usecase;
+			sourceTree = "<group>";
+		};
+		18C732CE2A0CEA7500974CD8 /* di */ = {
+			isa = PBXGroup;
+			children = (
+				18C732CF2A0CEA8200974CD8 /* DIManager.swift */,
+			);
+			path = di;
 			sourceTree = "<group>";
 		};
 		6874E7FD66502DD3B6D280AC /* Pods */ = {
@@ -584,6 +651,7 @@
 				183F32CD2A093A6200D2FA51 /* Reels.storyboard in Resources */,
 				183F32A12A09331200D2FA51 /* Assets.xcassets in Resources */,
 				183F32C72A093A3F00D2FA51 /* Search.storyboard in Resources */,
+				18C732B82A0CD3AE00974CD8 /* MessageListing.storyboard in Resources */,
 				183F32CB2A093A5800D2FA51 /* Post.storyboard in Resources */,
 				183F329F2A09331000D2FA51 /* Main.storyboard in Resources */,
 				18C732872A094FC000974CD8 /* Login.storyboard in Resources */,
@@ -644,6 +712,7 @@
 				183F32C32A093A0900D2FA51 /* PostViewController.swift in Sources */,
 				183F32CF2A0940D200D2FA51 /* ReelsPlayerViewController.swift in Sources */,
 				18C732B52A0C19E200974CD8 /* ImageCollectionViewCell.swift in Sources */,
+				18C732BF2A0CD7C800974CD8 /* MessagingViewModel.swift in Sources */,
 				18C732A12A0BCF4000974CD8 /* TaggedPostViewController.swift in Sources */,
 				183F329C2A09331000D2FA51 /* HomeViewController.swift in Sources */,
 				183F32D62A09412000D2FA51 /* SettingsViewController.swift in Sources */,
@@ -653,6 +722,8 @@
 				183F32C52A093A1300D2FA51 /* ReelsViewController.swift in Sources */,
 				18C732B32A0C027400974CD8 /* AllPostResponse.swift in Sources */,
 				18C7328F2A09534A00974CD8 /* DatabaseManager.swift in Sources */,
+				18C732C22A0CD7EC00974CD8 /* MessagingModel.swift in Sources */,
+				18C732C92A0CDA3E00974CD8 /* JsonPlaceholderNetworkManager.swift in Sources */,
 				183F32BF2A0939E800D2FA51 /* SearchViewController.swift in Sources */,
 				183F32E52A0941F900D2FA51 /* MessageListingViewController.swift in Sources */,
 				183F32E92A09423500D2FA51 /* FollowDetailsViewController.swift in Sources */,
@@ -663,11 +734,16 @@
 				18C7329A2A0A8A7D00974CD8 /* LocalStorageManager.swift in Sources */,
 				18C732A92A0BE1AE00974CD8 /* NetworkManager.swift in Sources */,
 				18C732B12A0BF28200974CD8 /* UserCountResponse.swift in Sources */,
+				18C732C52A0CD83D00974CD8 /* GetMessagesUseCase.swift in Sources */,
 				18C732952A0A64AF00974CD8 /* Extensions.swift in Sources */,
+				18C732CB2A0CDB6B00974CD8 /* MessagingResponse.swift in Sources */,
+				18C732BC2A0CD53900974CD8 /* MessageListingTableViewCell.swift in Sources */,
 				18C732842A094F8800974CD8 /* LoginViewController.swift in Sources */,
 				18C732912A09548100974CD8 /* AuthManager.swift in Sources */,
+				18C732CD2A0CE7F200974CD8 /* MessageDataMapper.swift in Sources */,
 				18C732AB2A0BEE0B00974CD8 /* ProfileDataManager.swift in Sources */,
 				18C732932A0A5D6500974CD8 /* Constants.swift in Sources */,
+				18C732D02A0CEA8200974CD8 /* DIManager.swift in Sources */,
 				18C7328C2A09519C00974CD8 /* RegisterViewController.swift in Sources */,
 				183F32DE2A0941BE00D2FA51 /* NotificationsViewController.swift in Sources */,
 				183F329A2A09331000D2FA51 /* SceneDelegate.swift in Sources */,

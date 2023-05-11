@@ -22,3 +22,4 @@ let KEY_ACCOUNT_TYPE = "account_type"
 
 let BASE_URL = "https://www.pixabay.com/api/"
 let API_KEY = "36222393-73c8bb3d61228a43ba9d781e5"
+let JSON_PLACEHOLDER_BASE_URL = "https://jsonplaceholder.typicode.com/"

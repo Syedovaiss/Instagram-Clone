@@ -59,7 +59,13 @@
                         <viewLayoutGuide key="safeArea" id="dy1-ke-h6F"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="pvN-eD-M27"/>
+                    <navigationItem key="navigationItem" id="pvN-eD-M27">
+                        <barButtonItem key="rightBarButtonItem" image="message.fill" catalog="system" id="lkH-tc-hG8">
+                            <connections>
+                                <action selector="onMessageClicked:" destination="UoT-F1-Px3" id="Oyo-Ob-zmR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rhq-nc-11z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -458,6 +464,7 @@
         <image name="icon_profile" width="75" height="50"/>
         <image name="icon_reels" width="24" height="25.333333969116211"/>
         <image name="icon_search" width="75" height="50"/>
+        <image name="message.fill" catalog="system" width="128" height="114"/>
         <image name="user_placeholder" width="42.666667938232422" height="42.666667938232422"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
